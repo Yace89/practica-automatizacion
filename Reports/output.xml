@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.2 (Python 3.6.3 on win32)" generated="20180924 20:24:18.212">
+<suite id="s1" name="Test04" source="C:\Users\Yacelis\Desktop\Curso\Test04.robot">
+<test id="s1-t1" name="Ingresar al sitio y hacer click en el segundo boton">
+<kw name="abrir navegador" library="recursos">
+<arguments>
+<arg>http://winstoncastillo.com/udemy/</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${navegador}</arg>
+</arguments>
+<msg timestamp="20180924 20:24:18.419" level="INFO">Opening browser 'gc' to base url 'http://winstoncastillo.com/udemy/'.</msg>
+<status status="PASS" starttime="20180924 20:24:18.419" endtime="20180924 20:24:21.574"></status>
+</kw>
+<kw name="Set Screenshot Directory" library="Screenshot">
+<doc>Sets the directory where screenshots are saved.</doc>
+<arguments>
+<arg>../Screenshots</arg>
+</arguments>
+<status status="PASS" starttime="20180924 20:24:21.574" endtime="20180924 20:24:21.576"></status>
+</kw>
+<status status="PASS" starttime="20180924 20:24:18.419" endtime="20180924 20:24:21.576"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20180924 20:24:21.576" endtime="20180924 20:24:22.716"></status>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>css=body &gt; div.container.align-middle &gt; div &gt; img</arg>
+</arguments>
+<msg timestamp="20180924 20:24:22.796" level="INFO">Element 'css=body &gt; div.container.align-middle &gt; div &gt; img' is displayed.</msg>
+<status status="PASS" starttime="20180924 20:24:22.718" endtime="20180924 20:24:22.796"></status>
+</kw>
+<kw name="Set Focus To Element" library="SeleniumLibrary">
+<doc>Sets focus to element identified by ``locator``.</doc>
+<arguments>
+<arg>css=body &gt; div.container.align-middle &gt; div &gt; div:nth-child(4) &gt; a:nth-child(2)</arg>
+</arguments>
+<status status="PASS" starttime="20180924 20:24:22.797" endtime="20180924 20:24:22.827"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>css=body &gt; div.container.align-middle &gt; div &gt; div:nth-child(4) &gt; a:nth-child(2)</arg>
+</arguments>
+<msg timestamp="20180924 20:24:22.828" level="INFO">Clicking element 'css=body &gt; div.container.align-middle &gt; div &gt; div:nth-child(4) &gt; a:nth-child(2)'.</msg>
+<status status="PASS" starttime="20180924 20:24:22.828" endtime="20180924 20:24:22.917"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>css=#exampleModal &gt; div &gt; div &gt; div.modal-header</arg>
+</arguments>
+<status status="PASS" starttime="20180924 20:24:22.918" endtime="20180924 20:24:23.178"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20180924 20:24:23.178" endtime="20180924 20:24:25.416"></status>
+</kw>
+<doc>https://yacelismata.testrail.io/index.php?/cases/view/1</doc>
+<status status="PASS" starttime="20180924 20:24:18.417" endtime="20180924 20:24:25.416" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20180924 20:24:18.214" endtime="20180924 20:24:25.418"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Test04">Test04</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
